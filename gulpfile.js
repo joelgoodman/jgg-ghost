@@ -46,7 +46,7 @@ function scss(done) {
     pump([
         src('assets/scss/**/*.scss'),
         sass( {outputStyle: 'compressed'} ),
-        dest('assets/css/jgg.css')
+        dest('assets/css/')
     ], handleError(done));
 }
 

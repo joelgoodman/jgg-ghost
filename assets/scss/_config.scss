@@ -1,0 +1,25 @@
+@import 'helpers';
+// CSS Variables
+:root {
+    --base-font-size: 1.125em; // 18px
+    --font-base: "Work Sans", sans-serif;
+    --font-heading: mrs-eaves, Georgia, serif;
+
+    // Colors
+    --g-color--base: #011936;
+    --g-color--bg: #EEE7DF;
+    --g-color--accent: #6E9887;
+    --g-color--accent-alt: #767B91;
+
+    // Elevation and stuff
+    --blur: 13px;
+    --t-timing: 275ms;
+    --t-effect: cubic-bezier(0,.5,.5,.99);
+
+    // Grid
+    --grid-unit: 8px;
+    --gutter-sm: calc( var(--grid-unit) * 2 );
+    --gutter-md: calc( var(--grid-unit) * 7 );
+    --gutter-lg: calc( var(--grid-unit) * 10 );
+
+}
