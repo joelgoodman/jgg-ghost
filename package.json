@@ -1,0 +1,41 @@
+{
+    "name": "jgg2021",
+    "description": "Ghost newsletter theme for joelgoodman.co",
+    "version": "1.1.0",
+    "engines": {
+        "ghost": ">=4.0.0",
+        "ghost-api": "v4"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Joel Goodman",
+        "email": "hello@joelgoodman.co"
+    },
+    "config": {
+        "posts_per_page": 25,
+        "image_sizes": {
+            "s": {
+                "width": 450
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 1000
+            }
+        }
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.5",
+        "cssnano": "^4.1.10",
+        "gscan": "^4.0.1",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-livereload": "^4.0.2",
+        "gulp-postcss": "^9.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-zip": "^5.1.0",
+        "postcss": "^8.2.8",
+        "sass": "^1.32.8"
+    }
+}

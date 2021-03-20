@@ -1,0 +1,19 @@
+{{!< default}}
+<main>
+  {{> navigation}}
+  <span class="divider"></span>
+  {{#post}}
+    <section class="post-body">
+      <header>
+        <h1>{{title}}</h1>
+        <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+      </header>
+      <article>
+        {{content}}
+      </article>
+    </section>
+    {{#if @labs.members}}
+      {{> subscribe-form}}
+    {{/if}}
+  {{/post}}
+</main>
