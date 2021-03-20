@@ -1,7 +1,7 @@
 @import 'helpers';
 // CSS Variables
 :root {
-    --base-font-size: 1.125em; // 18px
+    --base-font-size: 112.5%; // 18px
     --font-base: "Work Sans", sans-serif;
     --font-heading: mrs-eaves, Georgia, serif;
 
@@ -21,5 +21,4 @@
     --gutter-sm: calc( var(--grid-unit) * 2 );
     --gutter-md: calc( var(--grid-unit) * 7 );
     --gutter-lg: calc( var(--grid-unit) * 10 );
-
 }
