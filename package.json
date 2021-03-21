@@ -1,7 +1,7 @@
 {
     "name": "jgg2021",
     "description": "Ghost newsletter theme for joelgoodman.co",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "engines": {
         "node": ">=14.0.0",
         "ghost": ">=4.0.0",
