@@ -15,8 +15,7 @@
 }
 
 main {
-    padding: var(--gutter-sm);
-    margin-top: calc( var(--grid-unit) * 8 );
+    padding: calc( var(--grid-unit) * 8 ) var(--gutter-sm) var(--gutter-sm);
     @include mq(md) {
         width: 66vw;
         padding-left: 10vw;
@@ -31,7 +30,7 @@ main {
         margin-left: 0;
         .home-template & {
             align-items: flex-end;
-            padding-bottom: 17.5vh;
+            padding-bottom: 15vh;
         }
         .post-template & {
             display: grid;
