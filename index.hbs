@@ -6,12 +6,8 @@
 {{#is "tag"}}
   <h1>You're looking at posts tagged {{name}}.</h1>
 {{/is}}
-
-<main>
-  {{> navigation}}
-  <section class="post-list">
-    {{#foreach 'posts'}}
-      <article class="post-link" data-year="{{date "YYYY"}}"{{#if feature_image}} data-cover="{{img_url}}"{{/if}}><a href="{{url}}">{{title}}</a></article>
-    {{/foreach}}
-  </section>
-</main>
+<section class="post-list">
+  {{#foreach 'posts'}}
+    <article class="post-link" data-year="{{date "YYYY"}}"{{#if feature_image}} data-cover="{{img_url}}"{{/if}}><a href="{{url}}">{{title}}</a></article>
+  {{/foreach}}
+</section>
