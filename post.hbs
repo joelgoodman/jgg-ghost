@@ -1,19 +1,17 @@
 {{!< default}}
-<main>
-  {{> navigation}}
-  <span class="divider"></span>
-  {{#post}}
-    <section class="post-body">
-      <header>
-        <h1>{{title}}</h1>
-        <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
-      </header>
-      <article>
-        {{content}}
-      </article>
-    </section>
-    {{#if @labs.members}}
-      {{> subscribe-form}}
-    {{/if}}
-  {{/post}}
-</main>
+{{#post}}
+  <figure class="post-cover">
+    <img src="{{img_url feature_image absolute="true"}}" alt="{{excerpt}}" width="450" height="290" />
+  </figure>
+  <section class="post-body">
+    <header>
+      <h1>{{title}}</h1>
+      <p class="subhead">{{meta_description}}</p>
+      <span class="post-meta">{{#primary_author}}{{name}}{{/primary_author}} / <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM"}}</time> / {{reading_time}}</span>
+    </header>
+    <article>
+      {{content}}
+    </article>
+  </section>
+  {{> callout}}
+{{/post}}

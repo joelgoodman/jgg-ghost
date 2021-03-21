@@ -23,13 +23,19 @@ textarea {
     background: transparent;
     border: 0;
     font-size: 16px;
+    @include mq(lg) {
+        font-size: 1em;
+    }
 }
 
 button,
 input[type="submit"] {
     appearance: none;
     background: var(--g-color--base);
+    border: 0;
+    box-shadow: 0;
     color: var(--g-color--bg);
+    cursor: pointer;
     font-family: inherit;
     padding: var(--grid-unit) calc(var(--grid-unit) * 3);
     font-size: .85em;
@@ -56,5 +62,23 @@ input[type="submit"] {
     justify-content: stretch;
     input[type="email"] {
         flex: 1 1 auto;
+        padding: var(--grid-unit);
+    }
+    @include mq(md) {
+        width: 80%;
+    }
+}
+
+.callout {
+    background: var(--g-color--base);
+    padding: var(--gutter-md);
+    margin-top: var(--gutter-md);
+    color: var(--g-color--bg);
+    max-width: 590px;
+    > * {
+        color: inherit;
+    }
+    h2 {
+        font-weight: 600;
     }
 }

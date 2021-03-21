@@ -15,6 +15,8 @@
 }
 
 main {
+    padding: var(--gutter-sm);
+    margin-top: calc( var(--grid-unit) * 8 );
     @include mq(md) {
         width: 66vw;
         padding-left: 10vw;
@@ -26,7 +28,31 @@ main {
         }
     }
     @include mq(lg) {
-        margin-left: 70px;
-
+        margin-left: 0;
+        .home-template & {
+            align-items: flex-end;
+            padding-bottom: 17.5vh;
+        }
+        .post-template & {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            column-gap: calc( var(--grid-unit) * 4 );
+            width: 80vw;
+            align-items: start;
+            padding-left: calc( var(--grid-unit) * 12 );
+            .post-cover {
+                grid-column: 1;
+                position: sticky;
+                top: calc( var(--grid-unit) * 8 );
+            }
+            .post-body,
+            .callout {
+                grid-column: 2;
+            }
+            .post-body {
+                padding-top: 20vh;
+            }
+        }
     }
 }
+

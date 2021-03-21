@@ -1,0 +1,11 @@
+<aside class="callout{{#is member}}subscribed{{/is}}">
+    {{#unless member}}
+        <h2>Thanks for reading!</h2>
+        <p>I try to send new letters out once a week. Subscribe to get my latest thoughts in your inbox.</p>
+        {{> subscribe-form }}
+    {{ else }}
+        <h2>Thanks for subscribing!</h2>
+        <p>Your interest in my writing is sincerely appreciated. If you find what I share helpful, woudl you consider chipping to help with my hosting costs?</p>
+        <a href="javascript:" data-members-plan="Monthly">Help out Monthly</a> <a href="javascript:" data-members-plan="Yearly">Help out annually</a>
+    {{/unless}}
+</aside>

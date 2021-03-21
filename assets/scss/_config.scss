@@ -12,6 +12,8 @@
     --g-color--base-90: rgba(1, 25, 54, .9);
     --g-color--bg: #EEE7DF;
     --g-color--bg-95: rgba(238, 231, 223, .95);
+    --g-color--bg-dark: 233, 224, 215;
+    --menu-button-bg: #E9E0D7;
     --g-color--accent: #6E9887;
     --g-color--accent-alt: #767B91;
     --state-error: #902D41;
@@ -22,11 +24,12 @@
     // Elevation and stuff
     --blur: 13px;
     --t-timing: 275ms;
-    --t-effect: cubic-bezier(0,.5,.5,.99);
+    --t-effect: cubic-bezier(0.83, 0, 0.17, 1);
 
     // Grid
     --grid-unit: 8px;
     --gutter-sm: calc( var(--grid-unit) * 2 );
     --gutter-md: calc( var(--grid-unit) * 7 );
     --gutter-lg: calc( var(--grid-unit) * 10 );
+    --menu-width: calc( var(--grid-unit) * 12 );
 }

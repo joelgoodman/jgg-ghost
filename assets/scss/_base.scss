@@ -6,6 +6,7 @@ a, a:visited {
     color: var(--g-color--base);
     text-decoration: none;
     position: relative;
+    transition: all var(--t-timing) var(--t-effect);
     &:after {
         content: "";
         display: block;

@@ -39,6 +39,10 @@ h3 {
 main p {
     margin-top: 1.25em;
     line-height: 1.43;
+    &.subhead {
+        margin: 0.5em 0;
+        color: var(--g-color--body);
+    }
     a {
         display: inline-block;
         z-index: 0;
