@@ -7,16 +7,22 @@
   {{ghost_head}}
 </head>
 
-<body class="{{body_class}}" {{#if feature_image}} data-cover="{{img_url}}" {{/if}}>
+<body class="{{body_class}}">
+  <main>
+    {{{body}}}
+  </main>
+
   {{#is "home"}}
-  <a href="/posts/" title="View all posts" class="posts-link">Posts</a>
-  {{else}}
-  {{> branding}}
+    {{#if @site.cover_image}}
+      <figure class="home-cover">
+        {{!--
+        <img role="decorative" src="https://res.cloudinary.com/joelgoodman/image/fetch/f_auto,q_85,w_480,h_900,c_fill,g_auto/{{img_url @site.cover_image absolute="true"}}" alt="Silouetted person looking out from an observatory across a hazy city with rolling hills." width="480" height="900" /> --}}
+        <img role="decorative" src="{{img_url @site.cover_image}}" alt="Silouetted person looking out from an observatory across a hazy city with rolling hills." width="480" height="900" />
+      </figure>
+    {{/if}}
   {{/is}}
-  {{{body}}}
 
-  <div id="jgbg"></div>
-
+  {{> social}}
   {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some
   JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already
   loaded. --}}

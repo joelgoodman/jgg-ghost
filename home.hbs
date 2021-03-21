@@ -1,6 +1,12 @@
 {{!< default}}
-<main id="main-stage">
-  {{#post}}
-    {{content}}
-  {{/post}}
-</main>
+<section class="greeting">
+    {{#page}}
+        <h1 class="super">{{title}}</h1>
+        <article>
+            {{content}}
+        </article>
+    {{/page}}
+    {{#unless @member}}
+      {{> subscribe-form}}
+    {{/unless}}
+</section>

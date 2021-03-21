@@ -1,0 +1,32 @@
+.greeting {
+    padding: 6.5vh calc(var(--grid-unit) * 3);
+    width: 100%;
+    max-width: 550px;
+    .super {
+        max-width: 505px;
+    }
+    @include mq(sm) {
+        padding-left: 10vw;
+    }
+    @include mq(md) {
+        padding-left: 0;
+        max-width: 720px;
+    }
+}
+
+main {
+    @include mq(md) {
+        width: 66vw;
+        padding-left: 10vw;
+        padding-right: 0;
+        .home-template & {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+    }
+    @include mq(lg) {
+        margin-left: 70px;
+
+    }
+}

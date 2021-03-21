@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ui</title>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-mark" fill="#09C476" fill-rule="nonzero">
+            <path d="M0,0 L0,0 C4.97056501,0 9,3.91166664 9,8.73695198 L9,31 L9,31 C6.61140191,31 4.32077349,30.0782346 2.632673,28.4377381 C0.9445725,26.7972416 -0.0025225707,24.5725878 0,22.2538026 L0,0 Z" id="Path"></path>
+            <path d="M22,0 L22,0 C26.970565,0 31,3.91166664 31,8.73695198 L31,31 L31,31 C28.6114019,31 26.3207735,30.0782346 24.632673,28.4377381 C22.9445725,26.7972416 21.9974774,24.5725878 22,22.2538026 L22,0 Z" id="Path"></path>
+            <path d="M20,0 L20,0 L20,22.2604415 C20,27.0871664 15.9705627,31 11,31 L11,31 L11,8.73647574 C11.0017528,3.9109548 15.0306767,0 20,0 Z" id="Path" transform="translate(15.500000, 15.500000) rotate(180.000000) translate(-15.500000, -15.500000) "></path>
+        </g>
+    </g>
+</svg>

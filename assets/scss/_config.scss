@@ -7,9 +7,17 @@
 
     // Colors
     --g-color--base: #011936;
+    --g-color--body: #5b5c5a;
+    --g-color--base-40: rgba(1, 25, 54, .4);
+    --g-color--base-90: rgba(1, 25, 54, .9);
     --g-color--bg: #EEE7DF;
+    --g-color--bg-95: rgba(238, 231, 223, .95);
     --g-color--accent: #6E9887;
     --g-color--accent-alt: #767B91;
+    --state-error: #902D41;
+    --state-success: var(--g-color--accent);
+    --state-loading: var(--g-color--accent-alt);
+    --state-hover: #034AA0;
 
     // Elevation and stuff
     --blur: 13px;

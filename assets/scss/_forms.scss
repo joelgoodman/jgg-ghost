@@ -1,0 +1,60 @@
+form {
+    background-color: var(--g-color--bg-95);
+    border: 1px solid var(--g-color--base);
+    padding: 4px;
+    font-family: var(--font-base);
+    display: flex;
+    margin-top: 1.5em;
+    &.error {
+        border-color: var(--state-error);
+    }
+    &.success {
+        border-color: var(--state-success);
+    }
+    &.loading {
+        border-color: var(--state-loading);
+    }
+}
+input[type],
+button,
+textarea {
+    font-family: inherit;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    font-size: 16px;
+}
+
+button,
+input[type="submit"] {
+    appearance: none;
+    background: var(--g-color--base);
+    color: var(--g-color--bg);
+    font-family: inherit;
+    padding: var(--grid-unit) calc(var(--grid-unit) * 3);
+    font-size: .85em;
+    font-weight: 600;
+    flex: 0 155px;
+    transition: all var(--t-timing) var(--t-effect);
+    &:hover,
+    &:active {
+        background: var(--state-hover);
+    }
+    .error & {
+        background: var(--state-error);
+    }
+    .success & {
+        background: var(--state-success);
+    }
+    .loading & {
+        background: var(--state-loading);
+    }
+}
+// Subscribe layout
+.subscribe {
+    max-width: 625px;
+    justify-content: stretch;
+    input[type="email"] {
+        flex: 1 1 auto;
+    }
+}
