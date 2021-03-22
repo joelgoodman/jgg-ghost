@@ -32,6 +32,7 @@
     font-weight: bold;
     font-style: italic;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: var(--gutter-sm);
     position: absolute;
@@ -95,6 +96,9 @@
 .user-tools {
     padding: var(--grid-unit) var(--gutter-sm) var(--gutter-lg);
     @include mq(sm) {
+        padding: calc( var(--grid-unit) * 4) var(--gutter-sm) var(--gutter-lg);
+    }
+    @include mq(md) {
         padding: calc( var(--grid-unit) * 4) var(--gutter-sm) calc( var(--grid-unit) * 4) calc( var(--grid-unit) * 4);
     }
 }
