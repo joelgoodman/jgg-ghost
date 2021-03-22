@@ -53,6 +53,12 @@
         @extend h3;
         color: inherit;
     }
+    @include mq(sm) {
+        .newsletter-title {
+            font-size: 2rem;
+
+        }
+    }
     @include mq(md) {
         width: var(--menu-width);
         top: 0;
@@ -69,8 +75,6 @@
             white-space: nowrap;
             transform-origin: top center;
             transform: rotate(-90deg) translate(64px, -16px);
-            font-size: 2rem;
-
         }
     }
 }
@@ -113,7 +117,7 @@
             display: none;
         }
     }
-    @include mq(md) {
+    @include mq(sm) {
         padding-bottom: calc( var(--grid-unit) * 6);
         a {
             padding-left: 0;

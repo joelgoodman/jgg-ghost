@@ -111,7 +111,7 @@ input[type="submit"] {
 
 .callout {
     background: var(--g-color--base);
-    padding: var(--gutter-md);
+    padding: var(--gutter-md) var(--gutter-sm);
     margin-top: var(--gutter-md);
     color: var(--g-color--bg);
     max-width: 590px;
@@ -120,5 +120,8 @@ input[type="submit"] {
     }
     h2 {
         font-weight: 600;
+    }
+    @include mq(sm) {
+        padding: var(--gutter-md);
     }
 }
