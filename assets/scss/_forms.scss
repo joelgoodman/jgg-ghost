@@ -59,40 +59,41 @@ textarea {
         font-size: 1em;
     }
 }
-form {
 button,
 input[type="submit"] {
     appearance: none;
-    background: var(--g-color--base);
     border: 0;
     box-shadow: 0;
-    color: var(--g-color--bg);
     cursor: pointer;
     font-family: inherit;
-    padding: var(--grid-unit) calc(var(--grid-unit) * 3);
-    font-size: .85em;
-    font-weight: 600;
     transition: all var(--t-timing) var(--t-effect);
-    margin-top: var(--grid-unit);
-    height: 50px;
-    &:hover,
-    &:active {
-        background: var(--state-hover);
+    form & {
+                background: var(--g-color--base);
+
+        color: var(--g-color--bg);
+        padding: var(--grid-unit) calc(var(--grid-unit) * 3);
+        font-size: .85em;
+        font-weight: 600;
+        margin-top: var(--grid-unit);
+        height: 50px;
+        &:hover,
+        &:active {
+            background: var(--state-hover);
+        }
+        .error & {
+            background: var(--state-error);
+        }
+        .success & {
+            background: var(--state-success);
+        }
+        .loading & {
+            background: var(--state-loading);
+        }
+        @include mq(sm) {
+            flex: 0 155px;
+            margin-top: 0;
+        }
     }
-    .error & {
-        background: var(--state-error);
-    }
-    .success & {
-        background: var(--state-success);
-    }
-    .loading & {
-        background: var(--state-loading);
-    }
-    @include mq(sm) {
-        flex: 0 155px;
-        margin-top: 0;
-    }
-}
 }
 // Subscribe layout
 .subscribe {
