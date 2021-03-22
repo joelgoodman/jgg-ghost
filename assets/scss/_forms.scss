@@ -66,14 +66,13 @@ input[type="submit"] {
     box-shadow: 0;
     cursor: pointer;
     font-family: inherit;
+    font-size: .85em;
+    font-weight: 600;
     transition: all var(--t-timing) var(--t-effect);
     form & {
-                background: var(--g-color--base);
-
+        background: var(--g-color--base);
         color: var(--g-color--bg);
         padding: var(--grid-unit) calc(var(--grid-unit) * 3);
-        font-size: .85em;
-        font-weight: 600;
         margin-top: var(--grid-unit);
         height: 50px;
         &:hover,

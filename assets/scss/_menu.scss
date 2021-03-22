@@ -94,7 +94,7 @@
 .post-list,
 .user-tools {
     padding: var(--grid-unit) var(--gutter-sm) var(--gutter-lg);
-    @include mq(md) {
+    @include mq(sm) {
         padding: calc( var(--grid-unit) * 4) var(--gutter-sm) calc( var(--grid-unit) * 4) calc( var(--grid-unit) * 4);
     }
 }
