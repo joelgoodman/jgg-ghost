@@ -132,6 +132,7 @@
 .toggle-menu {
     background-color: var(--menu-button-bg);
     color: var(--g-color--base);
+    margin: 0;
     &:hover {
         background-color: #DED5CC;
     }
