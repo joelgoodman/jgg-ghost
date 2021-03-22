@@ -4,7 +4,11 @@ form {
     padding: 4px;
     font-family: var(--font-base);
     display: flex;
+    flex-direction: column;
     margin-top: 1.5em;
+    @include mq(sm) {
+        flex-direction: row;
+    }
     &.error {
         border-color: var(--state-error);
         .message-error {
@@ -55,7 +59,7 @@ textarea {
         font-size: 1em;
     }
 }
-
+form {
 button,
 input[type="submit"] {
     appearance: none;
@@ -68,8 +72,9 @@ input[type="submit"] {
     padding: var(--grid-unit) calc(var(--grid-unit) * 3);
     font-size: .85em;
     font-weight: 600;
-    flex: 0 155px;
     transition: all var(--t-timing) var(--t-effect);
+    margin-top: var(--grid-unit);
+    height: 50px;
     &:hover,
     &:active {
         background: var(--state-hover);
@@ -83,6 +88,11 @@ input[type="submit"] {
     .loading & {
         background: var(--state-loading);
     }
+    @include mq(sm) {
+        flex: 0 155px;
+        margin-top: 0;
+    }
+}
 }
 // Subscribe layout
 .subscribe {

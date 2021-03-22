@@ -132,10 +132,16 @@
         background-color: #DED5CC;
     }
     .home-template & {
-        background-color: var(--g-color--base-40);
+        background-color: var(--g-color--base);
         color: var(--g-color--bg);
         &:hover {
             background-color: var(--g-color--base-90);
+        }
+        @include mq(md) {
+            background-color: var(--g-color--base-40);
+            &:hover {
+                background-color: var(--g-color--base-90);
+            }
         }
     }
 }
