@@ -1,11 +1,12 @@
 .greeting {
-    padding: 6.5vh calc(var(--grid-unit) * 3);
+    padding: 6.5vh 0;
     width: 100%;
     max-width: 550px;
     .super {
         max-width: 505px;
     }
     @include mq(sm) {
+        padding-right: calc(var(--grid-unit) * 3);
         padding-left: 10vw;
     }
     @include mq(md) {
