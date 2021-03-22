@@ -24,6 +24,10 @@ a, a:visited {
         border-radius: 2.5px;
         background-color: var(--g-color--accent);
         z-index: -1;
+        transition: all var(--t-timing) var(--t-effect);
+    }
+    &:hover:after {
+        background-color: var(--state-hover);
     }
 }
 .home-cover {
