@@ -19,7 +19,7 @@
   {{#is "home"}}
     {{#if @site.cover_image}}
       <figure class="home-cover">
-        <img role="decorative" src="https://res.cloudinary.com/joelgoodman/image/fetch/f_auto,q_90,dpr_2.0,w_480,h_900,c_fill,g_east/{{img_url @site.cover_image absolute="true"}}" alt="Silouetted person looking out from an observatory across a hazy city with rolling hills." width="480" height="900" />
+        <img role="decorative" src="{{img_url @site.cover_image}}" alt="Silouetted person looking out from an observatory across a hazy city with rolling hills." loading="lazy" width="480" height="900" />
       </figure>
     {{/if}}
   {{/is}}

@@ -1,8 +1,10 @@
 {{!< default}}
 {{#post}}
+  {{#if feature_image }}
   <figure class="post-cover">
-    <img src="https://res.cloudinary.com/joelgoodman/image/fetch/w_800,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}}" alt="{{excerpt}}" width="450" height="290" />
+    <img src="{{img_url feature_image}}" alt="{{excerpt}}" loading="lazy" width="450" height="290" />
   </figure>
+  {{/if}}
   <section class="post-body">
     <header>
       <h1>{{title}}</h1>
